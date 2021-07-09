@@ -2,19 +2,20 @@ package programs;
 
 public class PrimeDemo {
 	public static void main(String[] args) {
-		int i=1, n=13;
-		int count=0;
-		do{
-			if(n%i==0){
-				count++;
+		int j=1, n=13;
+		int countvalue=0;
+
+		while(j<=n) {
+			if(n%j==0){
+				countvalue++;
 			}
-			++i;
-		}while(i<=n);
+			++j;
+		}
 		
-		if(count==2){
+		if(countvalue==2){
 			System.out.println("It is a Prime number");
 		}else{
-			System.out.println("It is not a prime number, because "+n+" is divisible by "+count+" times");
+			System.out.println("It is not a prime number, because "+n+" is divisible by "+countvalue+" times");
 		}
 	}
 }
